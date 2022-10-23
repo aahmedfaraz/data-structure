@@ -2,7 +2,7 @@
 import { LinkedList, LinkedListNode } from "./types";
 
 // Function: to insert node at any position
-const insert_node_at_pos = (head: null | LinkedListNode, position: number, data: number): LinkedListNode => {
+export const insert_node_at_pos = (head: null | LinkedListNode, position: number, data: number): LinkedListNode => {
     if (head === null) {
         head = new LinkedListNode(data);
         return head;
