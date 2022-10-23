@@ -55,20 +55,7 @@ console.log(obj, arr1, myName);
 // { name: 'ahmed', age: 22, profession: 'cloud expert' } [ 0, 1, 2, 3, 4, 5 ] AHMED FARAZ
 
 // ==============================================================================================
-class LinkedList {
-    head: LinkedListNode | null;
-    constructor() {
-        this.head = null
-    }
-}
-class LinkedListNode {
-    data: number;
-    next: LinkedListNode | null;
-    constructor(data: number) {
-        this.data = data;
-        this.next = null;
-    }
-}
+import { LinkedList, LinkedListNode } from './types';
 
 let arr2 = [0, 1, 2, 3, 4, 5]; // converting this array into linked list
 let myLinkedList = new LinkedList();
