@@ -1,5 +1,5 @@
 // Import LinkedList classes
-import { LinkedList, LinkedListNode } from "./types";
+import { LinkedList, LinkedListNode } from "./utils/types";
 
 // Function: to insert node inside a linked list
 export const insert_node = (head: null | LinkedListNode, data: number) => {

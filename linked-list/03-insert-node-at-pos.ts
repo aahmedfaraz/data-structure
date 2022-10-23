@@ -1,5 +1,5 @@
 // import classes
-import { LinkedList, LinkedListNode } from "./types";
+import { LinkedList, LinkedListNode } from "./utils/types";
 
 // Function: to insert node at any position
 export const insert_node_at_pos = (head: null | LinkedListNode, position: number, data: number): LinkedListNode => {

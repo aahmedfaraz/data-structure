@@ -1,6 +1,6 @@
 // import dummy llist and types
-import { dummy_llist } from "./mock";
-import { LinkedListNode } from "./types";
+import { dummy_llist } from "./utils/mock";
+import { LinkedListNode } from "./utils/types";
 
 // Function: to update node data at any position
 const update_node_at_pos = (head: null | LinkedListNode, position: number, data: number): null | LinkedListNode => {
