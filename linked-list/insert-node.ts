@@ -2,7 +2,7 @@
 import { LinkedList, LinkedListNode } from "./types";
 
 // Function: to insert node inside a linked list
-const insert_node = (head: null | LinkedListNode, data: number) => {
+export const insert_node = (head: null | LinkedListNode, data: number) => {
     if (head === null) {
         head = new LinkedListNode(data);
         return head;
