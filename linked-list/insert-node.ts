@@ -7,11 +7,11 @@ const insert_node = (head: null | LinkedListNode, data: number) => {
         head = new LinkedListNode(data);
         return head;
     }
-    let curr_head = head;
-    while (curr_head.next) {
-        curr_head = curr_head.next;
+    let curr_node = head;
+    while (curr_node.next) {
+        curr_node = curr_node.next;
     };
-    curr_head.next = new LinkedListNode(data);
+    curr_node.next = new LinkedListNode(data);
     return head;
 }
 
