@@ -63,7 +63,7 @@ my_llist.print_list()
 
 print()
 
-# update elements at any position
+# delete elements at any position
 print('AFTER MANIPULATIONS')
 my_llist.head = delete_node_at_pos(my_llist.head, 3)
 my_llist.print_list()
