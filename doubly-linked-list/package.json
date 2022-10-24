@@ -1,0 +1,11 @@
+{
+  "name": "doubly-linked-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "01-insert-node.js",
+  "scripts": {
+    "clean": "tsc --build --clean"
+  },
+  "author": "Ahmed Faraz",
+  "license": "ISC"
+}
