@@ -1,50 +1,52 @@
-# # ==============================================================================================
-# person1 = {
-#     "name": "Ahmed Faraz",
-# }
-# person2 = person1
-# person2["age"] = 22
-# print(person1)
+# ==============================================================================================
+person1 = {
+    "name": "Ahmed Faraz",
+}
+person2 = person1
+person2["age"] = 22
+print(person1)
 
-# # OUTPUT
-# # {'name': 'Ahmed Faraz', 'age': 22}
+# OUTPUT
+# {'name': 'Ahmed Faraz', 'age': 22}
 
-# # ==============================================================================================
-# my_string: str = "ahmed faraz"
-# my_obj: object = {
-#     "country": "Pakistan"
-# }
-# my_list: list = ["karachi", "lahore", "islamabad"]
+# ==============================================================================================
+my_string: str = "ahmed faraz"
+my_obj: object = {
+    "country": "Pakistan"
+}
+my_list: list = ["karachi", "lahore", "islamabad"]
 
-# # Function to pass variables to check which follows pass-by-reference property
-
-
-# def pass_by_ref(str: str, obj: object, lst: list):
-#     str = "steve jobs"
-#     obj["country"] = "Australia"
-#     lst.append("Sidney")
-#     lst.append("Melbourne")
-#     print('INSIDE FUNCTION')
-#     print(my_string, my_obj, my_list)
+# Function to pass variables to check which follows pass-by-reference property
 
 
-# print('BEFORE FUNCTION')
-# print(my_string, my_obj, my_list)
-# pass_by_ref(my_string, my_obj, my_list)
-# print('AFTER FUNCTION')
-# print(my_string, my_obj, my_list)
+def pass_by_ref(str: str, obj: object, lst: list):
+    str = "steve jobs"
+    obj["country"] = "Australia"
+    lst.append("Sidney")
+    lst.append("Melbourne")
+    print('INSIDE FUNCTION')
+    print(my_string, my_obj, my_list)
 
-# # OUTPUT
-# # BEFORE FUNCTION
-# # ahmed faraz {'country': 'Pakistan'} ['karachi', 'lahore', 'islamabad']
-# # INSIDE FUNCTION
-# # ahmed faraz {'country': 'Australia'} ['karachi', 'lahore', 'islamabad', 'Sidney', 'Melbourne']
-# # AFTER FUNCTION
-# # ahmed faraz {'country': 'Australia'} ['karachi', 'lahore', 'islamabad', 'Sidney', 'Melbourne']
+
+print('BEFORE FUNCTION')
+print(my_string, my_obj, my_list)
+pass_by_ref(my_string, my_obj, my_list)
+print('AFTER FUNCTION')
+print(my_string, my_obj, my_list)
+
+# OUTPUT
+# BEFORE FUNCTION
+# ahmed faraz {'country': 'Pakistan'} ['karachi', 'lahore', 'islamabad']
+# INSIDE FUNCTION
+# ahmed faraz {'country': 'Australia'} ['karachi', 'lahore', 'islamabad', 'Sidney', 'Melbourne']
+# AFTER FUNCTION
+# ahmed faraz {'country': 'Australia'} ['karachi', 'lahore', 'islamabad', 'Sidney', 'Melbourne']
 
 # ==============================================================================================
 
 # class: Linked List
+
+
 class LinkedList:
     def __init__(self):
         self.head = None
@@ -79,11 +81,9 @@ def insert_node(head: None | Node, data: int) -> None | Node:
 my_llist = LinkedList()
 
 # insert elements
-my_llist.head = insert_node(my_llist.head, 0)
-my_llist.head = insert_node(my_llist.head, 1)
-my_llist.head = insert_node(my_llist.head, 2)
-my_llist.head = insert_node(my_llist.head, 3)
-my_llist.head = insert_node(my_llist.head, 4)
+num_list = [1, 2, 3, 4, 5]
+for num in num_list:
+    my_llist.head = insert_node(my_llist.head, num)
 
 # print the list
 my_llist.print_list()
