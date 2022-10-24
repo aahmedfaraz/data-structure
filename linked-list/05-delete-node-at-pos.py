@@ -30,7 +30,7 @@ class Node:  # class Node
         self.next = None
 
 
-# Function: to update node at any position
+# Function: to delete node at any position
 def delete_node_at_pos(head: None | Node, position: int) -> None | Node:
     if(head == None or position < 0):
         return head
