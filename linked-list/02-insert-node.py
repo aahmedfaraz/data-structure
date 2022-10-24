@@ -11,6 +11,7 @@ class LinkedList:
         while(curr_node):
             print("->", curr_node.data, end="")
             curr_node = curr_node.next
+        print()
 
 
 class Node:  # class: Node
@@ -36,13 +37,23 @@ my_llist = LinkedList()
 
 # insert elements
 my_llist.head = insert_node(my_llist.head, 0)
-my_llist.head = insert_node(my_llist.head, 1)
-my_llist.head = insert_node(my_llist.head, 2)
-my_llist.head = insert_node(my_llist.head, 3)
-my_llist.head = insert_node(my_llist.head, 4)
+my_llist.print_list()
 
-# print the list
+my_llist.head = insert_node(my_llist.head, 1)
+my_llist.print_list()
+
+my_llist.head = insert_node(my_llist.head, 2)
+my_llist.print_list()
+
+my_llist.head = insert_node(my_llist.head, 3)
+my_llist.print_list()
+
+my_llist.head = insert_node(my_llist.head, 4)
 my_llist.print_list()
 
 # OUTPUT
+# The Linked List -> 0
+# The Linked List -> 0-> 1
+# The Linked List -> 0-> 1-> 2
+# The Linked List -> 0-> 1-> 2-> 3
 # The Linked List -> 0-> 1-> 2-> 3-> 4
